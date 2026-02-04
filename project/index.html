@@ -19,18 +19,18 @@
             </div>
         </a>
         <nav class="flex gap-4 items-center">
-            <a href="#" class="navitem flex gap-2 py-2 px-4 hover:bg-slate-800/60  rounded-[.25em] duration-200 active:bg-blue-800/60">
+            <a href="#" class="navitem flex gap-2 py-2 px-4 hover:bg-blue-800/60  rounded-[.25em] duration-200 ">
                 <i class="bi bi-trello"></i>
                 <p>Dashboard</p>
             </a>
-            <a href="#" class="navitem flex gap-2 py-2 px-4 hover:bg-slate-800/60 rounded-[.25em] duration-200">
+            <a href="#" class="navitem flex gap-2 py-2 px-4 hover:bg-blue-800/60 rounded-[.25em] duration-200">
                 <i class="bi bi-plus-circle"></i>
                 <p>Nova lavagem</p>
             </a>
         </nav>
     </header>
     <!-- Parte principal do site -->
-    <main class="p-14">
+    <main class="p-14 flex flex-col gap-8">
         <!-- Dashboard -->
         <section class="dashboard flex flex-col gap-8">
             <!-- bem vindo de volta -->
@@ -87,9 +87,63 @@
         </section>
 
         <!-- Formulário -->
-        <section class="form">
+        <form class="form p-4 bg-slate-800/60 rounded-[.5em] border border-slate-800 hover:border-slate-700 duration-200 flex flex-col gap-6">
+            <!-- header do form -->
+            <div class="flex gap-4 border-b border-b-slate-700 pb-2">
+                <i class="bi bi-patch-plus p-3 bg-blue-700/30 border border-blue-700/70 text-blue-100 aspect-square rounded-[.5em] text-[1.25em] leading-none"></i>
+                <div class="flex flex-col gap-0.5 leading-none justify-center">
+                    <h3 class="text-[1.25em]">Nova Lavagem</h3>
+                    <span class="text-sm text-blue-50/60 font-light">Preencha os dados do cliente</span>
+                </div>
+            </div>
+            <!-- corpo do form -->
+             <div class="form-container flex flex-col gap-2">
+                 <div class="form-item flex flex-col gap-0.5">
+                    <label for="nome">Nome *</label>    
+                    <input type="text" id="nome" placeholder="Digite o nome do cliente" required
+                        class="px-4 py-2 bg-slate-700/40 rounded-[.25em] outline-none border border-slate-700 focus:outline-none focus:border-blue-700">
+                 </div>
+                 <div class="form-item flex flex-col gap-0.5">
+                    <label for="modelo">Modelo do veículo *</label>    
+                    <input type="text" id="modelo" placeholder="Ex.: GolRolla" required
+                        class="px-4 py-2 bg-slate-700/40 rounded-[.25em] outline-none border border-slate-700 focus:outline-none focus:border-blue-700">
+                </div>
+                <div class="form-item flex flex-col gap-0.5">
+                    <label for="placa">Placa do veículo *</label>    
+                    <input type="text" id="placa" placeholder="ABC-6767" required
+                        class="px-4 py-2 bg-slate-700/40 rounded-[.25em] outline-none border border-slate-700 focus:outline-none focus:border-blue-700">
+                </div>
+                <div class="form-item flex flex-col gap-0.5">
+                    <label for="tipo">Tipo do serviço *</label>
+                    <select name="tipo" id="tipo" required class="px-4 py-2 bg-slate-700/40 rounded-[.25em] outline-none border border-slate-700 focus:outline-none focus:border-blue-700">
+                        <option value="simples" class="bg-blue-950 text-blue-50">Lavagem simples</option>
+                        <option value="detalhada" class="bg-blue-950 text-blue-50">Lavagem detalhada</option>
+                    </select>
+                </div>
+                <div class="form-item flex flex-col gap-0.5">
+                    <label for="preco">Preço em R$ *</label>    
+                    <input type="number" id="preco" placeholder="0.00" required
+                        class="px-4 py-2 bg-slate-700/40 rounded-[.25em] outline-none border border-slate-700 focus:outline-none focus:border-blue-700">
+                </div>
+                <div class="form-item flex flex-col gap-0.5">
+                    <label for="date">Data *</label>    
+                    <input type="date" id="date" placeholder="DD/MM/AAAA" required
+                        class="px-4 py-2 bg-slate-700/40 rounded-[.25em] outline-none border border-slate-700 focus:outline-none focus:border-blue-700">
+                 </div>
+             </div>
 
-        </section>
+             <!-- botões do form -->
+            <div class="flex gap-1">
+                <button type="submit" class="bg-blue-900/40 border border-blue-800/60 flex justify-center items-center gap-2 p-2 rounded-[.25em] cursor-pointer hover:bg-blue-900/60 duration-200 grow-6">
+                   <i class="bi bi-floppy"></i>
+                   <p>Salvar lavagem</p>
+                </button>
+                <button type="reset" class="grow bg-slate-600/30 border border-slate-600/60 rounded-[.25em] flex justify-center items-center gap-2 cursor-pointer hover:bg-slate-600/50 duration-200">
+                    <i class="bi bi-x-lg"></i>
+                    <p>Limpar formulário</p>
+                </button>
+            </div>
+        </form>
     </main>
 </body>
 </html>
