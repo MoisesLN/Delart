@@ -1,6 +1,6 @@
-# Delart
-# 📌 Projeto
+# 🚗 Delart Estética Automotiva
 
+Visite o projeto em [https://moisesln.github.io/Delart](moisesln.github.io/delart) <br>
 Este repositório contém o projeto desenvolvido pelo grupo, com foco em organização, clareza e facilidade de execução.
 
 ---
@@ -11,41 +11,25 @@ Este repositório contém o projeto desenvolvido pelo grupo, com foco em organiz
 
 Antes de começar, certifique-se de ter instalado em sua máquina:
 
-* **Node.js** (versão recomendada: LTS)
-* **npm**
-* Navegador web atualizado
+* NodeJS
 
 ### Passo a passo
 
-1. Clone este repositório:
+1. Clone este repositório e entre no diretório:
 
 ```bash
 git clone <https://github.com/MoisesLN/Delart.git>
-```
-
-2. Acesse a pasta do projeto:
-
-```bash
 cd Delart
 ```
-
-3. Instale as dependências:
+2. Instale as dependências:
 
 ```bash
 npm install
 ```
-
-4. Como o projeto utiliza **Tailwind CLI**, o CSS já está configurado e pronto para uso, não sendo necessário rodar comando de build adicional.
-   bash
-   npm run build
-
-````
-
-5. Abra o arquivo `index.html` diretamente no navegador **ou** execute o servidor configurado no projeto:
+3. Para ativar o Tailwind CLI (se for criar novas alterações), para rodá-lo faça o seguinte:
 ```bash
-npm start
-````
-
+npx @tailwindcss/cli -i ./project/style.css -o ./project/output.css --watch
+```
 ---
 
 ## 🧠 Funcionalidades
