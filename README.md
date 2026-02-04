@@ -1,9 +1,8 @@
 # 🚗 Delart Estética Automotiva
 
 Visite o projeto em [https://moisesln.github.io/Delart](moisesln.github.io/delart) <br>
-Este repositório contém o projeto desenvolvido pelo grupo, com foco em organização, clareza e facilidade de execução.
 
----
+Este repositório contém o projeto desenvolvido pelo grupo. Pensamos nesse tema, pois um dos componentes Christian, tem uma empresa de estética automotiva, chamada Delart. Lá ele presta serviços como lavagem de carros, motos e qualquer outro tipo de veículo (ou não). 
 
 ## 🚀 Como rodar o projeto
 
